@@ -80,6 +80,7 @@ background: url('../img/Together.jpg');
 background-repeat: no-repeat;
 background-position: 100%;
 background-size: cover;
+background-position: center center;
 }
 
 .testimony{
@@ -135,10 +136,36 @@ section .section-inner h2{
     align-items: center;
 }
 
+#br {
+   line-height: 1000%;
+}
+
+.container{
+	flex-wrap:wrap;
+}
+
+.row {
+  display: flex;
+}
+
+.col-lg-6 {
+  flex: 100%;
+}
+
 @media screen and (max-width: 500px){
     .brand .h1-seo{
         font-size: 2.2rem;
     }
+
+		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 500px) {
+		  .col-lg-6 {
+
+				height: 150%;
+		  }
+		}
+
+
 
 
 }
